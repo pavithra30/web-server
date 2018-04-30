@@ -32,7 +32,7 @@ app.get('/',(req,res)=>{
  });
 
  app.listen(port,()=>{
-   console.log("app started");
+   console.log("go and check the website");
  });
 
 //8711dd70c36b83855f18d16779565a9031984ecc
