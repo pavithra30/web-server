@@ -31,12 +31,8 @@ app.get('/',(req,res)=>{
    });
  });
 
-<<<<<<< HEAD
  app.listen(port,()=>{
    console.log("app started");
  });
-=======
- app.listen(port, () => {
-	console.log("APPS STARTED");
-});
->>>>>>> 8711dd70c36b83855f18d16779565a9031984ecc
+
+//8711dd70c36b83855f18d16779565a9031984ecc
