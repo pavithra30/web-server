@@ -13,5 +13,9 @@
     "hbs": "^4.0.0"
   },
   "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "ssh://gitadmin@/github.com/yasirnali/alitreebook.git/home/gitadmin/git/testing.git"
+  },
   "description": ""
 }
