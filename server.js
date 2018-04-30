@@ -10,7 +10,8 @@ hbs.registerHelper('getCurrentYear',()=>{
 app.set('view engine','hbs');
 app.use(express.static(__dirname+'/public'));
 app.get('/',(req,res)=>{
-  res.render('home.hbs',{welcomeMessage:'Welcome to my webite',currentYear:new Date().getFullYear()
+  res.render('home.hbs',{pageTitle:'Home page',
+    welcomeMessage:'Welcome to my webite',currentYear:new Date().getFullYear()
 });
 });
  app.get('/about',(req,res)=>{
@@ -19,10 +20,17 @@ app.get('/',(req,res)=>{
      currentYear:new Date().getFullYear()
    });
  });
+ app.get('/projects',(req,res)=>{
+   res.render('projects.hbs',{
+     pageTitle:'Projects'
+   });
+ });
  app.get('/bad',(req,res)=>{
    res.send({
      errorMessage:'unable to handle request'
    });
  });
 
- app.listen(port);
+ app.listen(port,()=>{
+   console.log("app started");
+ });
